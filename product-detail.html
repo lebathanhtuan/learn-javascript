@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Product Detail</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="position: relative;">    
+            <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" style="box-shadow: 2px 0px 8px #333">
+                <!-- Brand -->
+                <a class="navbar-brand fix-frand" href="#"><img src="logo.png" width="100%" height="auto"></a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse fix-link" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-detail.html">Detail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-nav">
+                    <div class="avatar-navbar"><img src="avatar.png"></div>
+                    <div class="linedivide"></div>
+                    <div class="avatar-navbar"><a href="cart-checkout.html"><img src="bag.png"></a></div>
+                </div>
+            </nav>
+        </div>
+        <div class="bread-crumb">
+            <p>Home > Women > T-Shirt > Boxy T-Shirt with Roll Sleeve Detail</p>
+        </div>
+        <div class="container-detail container">
+            <div class="row">
+                <div class="col-md-1" style="padding-right: 0px">
+                    <div class="mb-3">
+                        <img src="https://via.placeholder.com/320x427" width="100%" height="auto">
+                    </div>
+                    <div class="mb-3">
+                        <img src="https://via.placeholder.com/320x427" width="100%" height="auto">
+                    </div>
+                    <div class="mb-3">
+                        <img src="https://via.placeholder.com/320x427" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div>
+                        <img src="https://via.placeholder.com/1200x1600" width="100%" height="auto">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p id="id-product" style="display: none;"></p>
+                    <h3 style="font-weight: 300;" id="name-product"></h3>
+                    <span style="font-size: 30px; font-weight: 300; color: #333" id="price-product"></span>
+                    <p>Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.</p>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="size" style="line-height: 38px">Size</label>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <select name="size" id="" class="form-control" style="border-radius: 0;">
+                                        <option selected>Choose an option</option>
+                                        <option value="">Size S</option>
+                                        <option value="">Size M</option>
+                                        <option value="">Size L</option>
+                                        <option value="">Size XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="color" style="line-height: 38px">Color</label>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <select name="color" id="color-product" class="form-control" style="border-radius: 0;">
+                                        <option value="0" selected>Choose an option</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                            </div>
+                            <div class="col-md-9">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-outline-secondary" type="button" style="width: 40px;">-</button>  
+                                    </div>
+                                    <input type="text" style="width: 40px; text-align: center;" value="1">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" style="width: 40px;">+</button>  
+                                    </div>
+                                </div>
+                                <input class="btn btn-dark" id="add-to-cart" style="border-radius: 20px;" value="ADD TO CART">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="title-featured-product">
+            <h2>RELATED PRODUCTS</h2>
+        </div>
+        <div id="slide-product" class="carousel slide container-slide-product" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="container-product">
+                                    <img src="https://via.placeholder.com/720x960" width="100%" height="auto">
+                                    <div class="overlay">
+                                        <button class="btn btn-dark btn-add-to-card">ADD TO CARD</button>
+                                    </div>
+                                </div>
+                                <div class="content-featured-product">
+                                    <h6>Herschel supply co 25l</h6>
+                                    <h6>$75.00</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev prev-position" href="#slide-product" data-slide="prev">
+                <span class="carousel-control-prev-icon prev-custom"></span>
+            </a>
+            <a class="carousel-control-next next-position" href="#slide-product" data-slide="next">
+                <span class="carousel-control-next-icon next-custom"></span>
+            </a>
+        </div>
+        <div class="container-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="get-in-touch">
+                            <h6>CATEGORIES</h6>
+                            <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="pb-4">CATEGORIES</h6>
+                                <ul class="fix-ul">
+                                    <li><p>Men</p></li>
+                                    <li><p>Women</p></li>
+                                    <li><p>Dresses</p></li>
+                                    <li><p>Sunglasses</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="pb-4">LINKS</h6>
+                                <ul class="fix-ul">
+                                    <li><p>Search</p></li>
+                                    <li><p>About Us</p></li>
+                                    <li><p>Contact Us</p></li>
+                                    <li><p>Returns</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="pb-4">HELP</h6>
+                                <ul class="fix-ul">
+                                    <li><p>Track Order</p></li>
+                                    <li><p>Returns</p></li>
+                                    <li><p>Shipping</p></li>
+                                    <li><p>FAQs</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="get-in-touch">
+                            <h6>NEWSLETTER</h6>
+                            <input type="text" class="input-subcribe" placeholder="email@example.com">
+                            <button class="btn btn-dark btn-subcribe">SUBCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-and-copyright">
+                <div>
+                    <div>
+                        <img src="paypal.png" alt="">
+                        <img src="visa.png" alt="">
+                        <img src="mastercard.png" alt="">
+                        <img src="express.png" alt="">
+                        <img src="discover.png" alt="">
+                    </div>
+                    <p>Copyright © 2018 All rights reserved. | This template is made with love by Colorlib</p>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script>
+            window.onload = function(){
+                function getQueryVariable(variable)
+                {
+                    var query = window.location.search.substring(1);
+                    var vars = query.split('&');
+                    for (var i=0;i<vars.length;i++) {
+                        var pair = vars[i].split('=');
+                        if(pair[0] == variable){return pair[1];}
+                    }
+                    return(false);
+                }
+                var idValue = getQueryVariable('id');
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("GET", "http://localhost:3000/product", true);
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var data = JSON.parse(xhttp.responseText);
+                        for(var key in data) {
+                            if (data[key].id == idValue){
+                                document.getElementById("id-product").innerHTML += data[key].id;
+                                document.getElementById("name-product").innerHTML += data[key].name;
+                                document.getElementById("price-product").innerHTML += data[key].price;
+                                colorProduct = data[key].options;
+                                for(var color in colorProduct){
+                                    document.getElementById("color-product").innerHTML += '<option value="'+colorProduct[color].color+'">'+colorProduct[color].color+'</option>';
+                                }
+                            }
+                        }
+                    }
+                };
+                xhttp.send();  
+                document.getElementById("add-to-cart").addEventListener('click', function(e) {
+                    e.preventDefault();
+                    idProduct = document.getElementById("id-product").innerText;
+                    colorProduct = document.getElementById("color-product").value;
+                    if (colorProduct != 0){
+                        var getCart = localStorage.getItem('idCart');
+                        console.log(getCart);
+                        if(getCart == null){
+                            localStorage.setItem('idCart', idProduct+colorProduct);
+                            alert('Đã thêm vào giỏ!');
+                        }else if(getCart.search(idProduct+colorProduct) == -1){
+                            localStorage.setItem('idCart', getCart +','+ idProduct + colorProduct);
+                            alert('Đã thêm vào giỏ!');
+                        }else{
+                            alert('Sản phẩm này đã tồn tại trong giỏ!');
+                        }
+                    }else{
+                        alert('Bạn chưa chọn màu sản phẩm!');
+                    }
+                })              
+            }
+        </script>
+    </body>
+</html>

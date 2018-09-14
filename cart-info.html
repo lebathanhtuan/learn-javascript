@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Product</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="position: relative;">    
+            <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" style="box-shadow: 2px 0px 8px #333">
+                <!-- Brand -->
+                <a class="navbar-brand fix-frand" href="#"><img src="logo.png" width="100%" height="auto"></a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse fix-link" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product-detail.html">Detail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-nav">
+                    <div class="avatar-navbar"><img src="avatar.png"></div>
+                    <div class="linedivide"></div>
+                    <div class="avatar-navbar"><a href="cart-checkout.html"><img src="bag.png"></a></div>
+                </div>
+            </nav>
+        </div>
+        <div class="title-page-product">
+            <div>
+                <h1>Checkout</h1>
+            </div>
+        </div>
+        <div class="container container-product-page">
+            <div class="container-checkout">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="checkout-title">
+                            <h4>1. Cart</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="checkout-title checkout-title-active">
+                            <h4>2. Information</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="checkout-title">
+                            <h4>3. Payment</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="checkout-title">
+                            <h4>4. Complete</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-content">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Họ và tên:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="fullname-checkout">
+                                            <span class="error-pattern"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Giới tính:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <select class="custom-select" id="sex-checkout">
+                                                <option value="0" selected>Chọn giới tính</option>
+                                                <option value="Nam">Nam</option>
+                                                <option value="Nữ">Nữ</option>
+                                            </select>
+                                            <span class="error-pattern"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Email:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="email-checkout">
+                                            <span class="error-pattern"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Số điện thoại:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="phone-checkout">
+                                            <span class="error-pattern"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label>Địa chỉ giao hàng:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="address-checkout">
+                                            <span class="error-pattern"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Mã vùng:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="area-checkout">
+                                            <span class="error-pattern"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>Mã bưu chính:</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="zip-checkout">
+                                            <span class="error-pattern"></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="business-address" name="business-address">
+                                            <label class="custom-control-label" for="business-address">Địa chỉ doanh nghiệp</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="cart-footer">
+                        <a href="cart-checkout.html" class="btn btn-secondary float-left">Back</a>
+                        <a href="#" class="btn btn-primary float-right" id="submit-cart-info">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="get-in-touch">
+                            <h6>CATEGORIES</h6>
+                            <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h6 class="pb-4">CATEGORIES</h6>
+                                <ul class="fix-ul">
+                                    <li><p>Men</p></li>
+                                    <li><p>Women</p></li>
+                                    <li><p>Dresses</p></li>
+                                    <li><p>Sunglasses</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="pb-4">LINKS</h6>
+                                <ul class="fix-ul">
+                                    <li><p>Search</p></li>
+                                    <li><p>About Us</p></li>
+                                    <li><p>Contact Us</p></li>
+                                    <li><p>Returns</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="pb-4">HELP</h6>
+                                <ul class="fix-ul">
+                                    <li><p>Track Order</p></li>
+                                    <li><p>Returns</p></li>
+                                    <li><p>Shipping</p></li>
+                                    <li><p>FAQs</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="get-in-touch">
+                            <h6>NEWSLETTER</h6>
+                            <input type="text" class="input-subcribe" placeholder="email@example.com">
+                            <button class="btn btn-dark btn-subcribe">SUBCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-and-copyright">
+                <div>
+                    <div>
+                        <img src="paypal.png" alt="">
+                        <img src="visa.png" alt="">
+                        <img src="mastercard.png" alt="">
+                        <img src="express.png" alt="">
+                        <img src="discover.png" alt="">
+                    </div>
+                    <p>Copyright © 2018 All rights reserved. | This template is made with love by Colorlib</p>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){
+                document.getElementById("submit-cart-info").onclick = function(e){
+                    e.preventDefault();
+                    var isValid = true;
+                    var namePattern = /^[A-Za-z0-9]{3,}$/;
+                    var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+                    var phonePattern = /^[0-9]{9,11}$/;
+                    var areaPattern = /^[0-9]{2,3}$/;
+                    var zipPattern = /^[0-9]{6}$/;
+                    var fullname = document.getElementById("fullname-checkout").value;
+                    var sex = document.getElementById("sex-checkout").value;
+                    var email = document.getElementById("email-checkout").value;
+                    var phone = document.getElementById("phone-checkout").value;
+                    console.log(phone);
+                    var address = document.getElementById("address-checkout").value;
+                    var area = document.getElementById("area-checkout").value;
+                    var zip = document.getElementById("zip-checkout").value;
+
+                    if(fullname == ''){
+                        isValid = false;
+                        document.getElementById("fullname-checkout").style.border = '1px solid red';
+                        document.getElementById("fullname-checkout").nextElementSibling.innerHTML = 'Bạn chưa nhập tên!';
+                    }else if(!namePattern.test(fullname)){
+                        isValid = false;
+                        document.getElementById("fullname-checkout").style.border = '1px solid red';
+                        document.getElementById("fullname-checkout").nextElementSibling.innerHTML = 'Tên của bạn quá ngắn!';
+                    }else{
+                        document.getElementById("fullname-checkout").style.border = '1px solid #ced4da';
+                        document.getElementById("fullname-checkout").nextElementSibling.innerHTML = '';
+                    }
+
+                    if(sex == 0){
+                        isValid = false;
+                        document.getElementById("sex-checkout").style.border = '1px solid red';
+                        document.getElementById("sex-checkout").nextElementSibling.innerHTML = 'Bạn chưa chọn giới tính!';
+                    }else{
+                        document.getElementById("sex-checkout").style.border = '1px solid #ced4da';
+                        document.getElementById("sex-checkout").nextElementSibling.innerHTML = '';
+                    }
+
+                    if(email == ''){
+                        isValid = false;
+                        document.getElementById("email-checkout").style.border = '1px solid red';
+                        document.getElementById("email-checkout").nextElementSibling.innerHTML = 'Bạn chưa nhập email!';
+                    }else if(!emailPattern.test(email)){
+                        isValid = false;
+                        document.getElementById("email-checkout").style.border = '1px solid red';
+                        document.getElementById("email-checkout").nextElementSibling.innerHTML = 'Email của bạn chưa đúng định dạng!';
+                    }else{
+                        document.getElementById("email-checkout").style.border = '1px solid #ced4da';
+                        document.getElementById("email-checkout").nextElementSibling.innerHTML = '';
+                    }
+
+                    if(phone == ''){
+                        isValid = false;
+                        document.getElementById("phone-checkout").style.border = '1px solid red';
+                        document.getElementById("phone-checkout").nextElementSibling.innerHTML = 'Bạn chưa nhập số điện thoại!';
+                    }else if(!phonePattern.test(phone)){
+                        isValid = false;
+                        document.getElementById("phone-checkout").style.border = '1px solid red';
+                        document.getElementById("phone-checkout").nextElementSibling.innerHTML = 'Số điện thoại của bạn không đúng!';
+                    }else{
+                        document.getElementById("phone-checkout").style.border = '1px solid #ced4da';
+                        document.getElementById("phone-checkout").nextElementSibling.innerHTML = '';
+                    }
+                    
+                    if(address == ''){
+                        isValid = false;
+                        document.getElementById("address-checkout").style.border = '1px solid red';
+                        document.getElementById("address-checkout").nextElementSibling.innerHTML = 'Bạn chưa nhập địa chỉ!';
+                    }else{
+                        document.getElementById("address-checkout").style.border = '1px solid #ced4da';
+                        document.getElementById("address-checkout").nextElementSibling.innerHTML = '';
+                    }
+
+                    if(area == ''){
+                        isValid = false;
+                        document.getElementById("area-checkout").style.border = '1px solid red';
+                        document.getElementById("area-checkout").nextElementSibling.innerHTML = 'Bạn chưa nhập mã vùng!';
+                    }else if(!areaPattern.test(area)){
+                        isValid = false;
+                        document.getElementById("area-checkout").style.border = '1px solid red';
+                        document.getElementById("area-checkout").nextElementSibling.innerHTML = 'Mã vùng của bạn không đúng!';
+                    }else{
+                        document.getElementById("area-checkout").style.border = '1px solid #ced4da';
+                        document.getElementById("area-checkout").nextElementSibling.innerHTML = '';
+                    }
+
+                    if(zip == ''){
+                        isValid = false;
+                        document.getElementById("zip-checkout").style.border = '1px solid red';
+                        document.getElementById("zip-checkout").nextElementSibling.innerHTML = 'Bạn chưa nhập mã bưu chính!';
+                    }else if(!zipPattern.test(zip)){
+                        isValid = false;
+                        document.getElementById("zip-checkout").style.border = '1px solid red';
+                        document.getElementById("zip-checkout").nextElementSibling.innerHTML = 'Mã bưu chính của bạn không đúng!';
+                    }else{
+                        document.getElementById("zip-checkout").style.border = '1px solid #ced4da';
+                        document.getElementById("zip-checkout").nextElementSibling.innerHTML = '';
+                    }
+
+                    if(isValid == true){
+                        window.location = "cart-payment.html";
+                    }
+                };
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+{
+    "product": [
+        {
+            "id": "P0001",
+            "name": "Samsung Galaxy J8",
+            "brand": "Samsung",
+            "price": 7290000,
+            "imgCover": "https://via.placeholder.com/720x960",
+            "options": [
+              {
+                "color": "Vàng"
+              },
+              {
+                "color": "Đen"
+              },
+              {
+                "color": "Tím"
+              }
+            ]
+        },
+        {
+            "id": "P0002",
+            "name": "Samsung J4 2018",
+            "brand": "Samsung",
+            "price": 3990000,
+            "imgCover": "https://via.placeholder.com/720x960",
+            "options": [
+              {
+                "color": "Vàng"
+              },
+              {
+                "color": "Đen"
+              },
+              {
+                "color": "Tím"
+              }
+            ]
+        },
+        {
+            "id": "P0003",
+            "name": "Samsung Galaxy S9+",
+            "brand": "Samsung",
+            "price": 23490000,
+            "imgCover": "https://via.placeholder.com/720x960",
+            "options": [
+              {
+                "color": "Vàng"
+              },
+              {
+                "color": "Đen"
+              },
+              {
+                "color": "Tím"
+              }
+            ]
+        },
+        {
+            "id": "P0004",
+            "name": "Xiaomi Mi8",
+            "brand": "Xiaomi",
+            "price": 12990000,
+            "imgCover": "https://via.placeholder.com/720x960",
+            "options": [
+              {
+                "color": "Vàng"
+              },
+              {
+                "color": "Đen"
+              },
+              {
+                "color": "Tím"
+              }
+            ]
+        },
+        {
+            "id": "P0005",
+            "name": "Xiaomi Mi A2 Lite",
+            "brand": "Xiaomi",
+            "price": 5299000,
+            "imgCover": "https://via.placeholder.com/720x960",
+            "options": [
+              {
+                "color": "Vàng"
+              },
+              {
+                "color": "Đen"
+              },
+              {
+                "color": "Tím"
+              }
+            ]
+        },
+        {
+            "id": "P0006",
+            "name": "Xiaomi Redmi Note 5",
+            "brand": "Xiaomi",
+            "price": 4799000,
+            "imgCover": "https://via.placeholder.com/720x960",
+            "options": [
+              {
+                "color": "Vàng"
+              },
+              {
+                "color": "Đen"
+              },
+              {
+                "color": "Tím"
+              }
+            ]
+        }
+    ]
+}
